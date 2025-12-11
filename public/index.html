@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" data-theme="dark">
+
+<head>
+  <meta charset="utf-8" />
+  <!-- Force dark mode immediately (prevents white flash/override) -->
+  <script>
+    (function () {
+      try {
+        // Force the data-theme attribute on html element before CSS/React runs
+        document.documentElement.setAttribute('data-theme', 'dark');
+        // Ensure any code reading saved theme sees 'dark'
+        localStorage.setItem('theme', 'dark');
+      } catch (e) { /* ignore */ }
+    })();
+  </script>
+
+  <link rel="shortcut icon" href="%PUBLIC_URL%/icon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="title" content="Digital Market Place React Js Template">
+  <meta name="description"
+    content="KINAPI – KINAPI STORES-Your One stop Digital Marketplace – Looking For OTT service, premium software, game accounts, AI subscription, or instant support">
+  <meta name="keywords" content="Car Repair,Servicing">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/line-awesome.min.css" />
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/bootstrap.min.css" />
+  <title> KINAPI STORES </title>
+</head>
+
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
